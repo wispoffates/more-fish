@@ -48,6 +48,7 @@ repositories {
     maven { url "http://maven.sk89q.com/repo/" }
     maven { url "https://repo.aikar.co/content/groups/aikar/" }
     maven { url "https://hub.spigotmc.org/nexus/content/groups/public/" }
+    //maven { url "https://repo.dmulloy2.net/nexus/repository/public/" }
     maven { url 'https://jitpack.io' }
 }
 
@@ -72,12 +73,12 @@ dependencies {
     implementation 'co.aikar:acf-core:0.5.0-SNAPSHOT'
     implementation 'co.aikar:acf-paper:0.5.0-SNAPSHOT'
     implementation 'com.github.elsiff:egui-core:1.0.3-SNAPSHOT'
-    compileOnly 'com.comphenix.protocol:ProtocolLib-API:4.2.1'
-    compileOnly 'com.sk89q:worldguard:6.1'
+    compileOnly 'com.comphenix.protocol:ProtocolLib:4.5.0'
+    compileOnly 'com.sk89q.worldguard:worldguard-bukkit:7.0.1'
     compileOnly 'org.spigotmc:spigot-api:1.13.2-R0.1-SNAPSHOT'
-    compileOnly 'net.milkbowl.vault:VaultAPI:1.6'
+    compileOnly 'net.milkbowl.vault:VaultAPI:1.7'
     compileOnly 'net.citizensnpcs:citizensapi:2.0.18-SNAPSHOT'
-    compileOnly 'me.clip:placeholderapi:2.7.1'
+    compileOnly 'me.clip:placeholderapi:2.10.9'
     compileOnly 'com.github.mcMMO-Dev:mcMMO:fa1bbd2'
 }
 
