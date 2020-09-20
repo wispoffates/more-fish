@@ -125,9 +125,9 @@ class FishingCompetitionHost(
         return mapOf(
             "%ordinal%" to NumberUtils.ordinalOf(number),
             "%number%" to number.toString(),
-            "%player%" to record.fisher.name,
+            "%player%" to record.fisher.name.toString(),
             "%length%" to record.fish.length.toString(),
-            "%fish%" to record.fish.type.name
+            "%fish%" to record.fish.type.name.toString()
         )
     }
 }
