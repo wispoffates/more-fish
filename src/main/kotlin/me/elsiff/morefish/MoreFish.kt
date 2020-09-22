@@ -1,6 +1,6 @@
 package me.elsiff.morefish
 
-import co.aikar.commands.PaperCommandManager
+import co.aikar.commands.BukkitCommandManager
 import me.elsiff.egui.GuiOpener
 import me.elsiff.egui.GuiRegistry
 import me.elsiff.morefish.command.MainCommand
@@ -71,7 +71,7 @@ class MoreFish : JavaPlugin() {
             registerEvents(FishShopSignListener(fishShop), this@MoreFish)
         }
 
-        val commands = PaperCommandManager(this)
+        val commands = BukkitCommandManager(this)
         val mainCommand = MainCommand(this, competitionHost, fishShop)
         commands.registerCommand(mainCommand)
 
